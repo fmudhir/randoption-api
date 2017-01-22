@@ -22,6 +22,27 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+		<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>exec-maven-plugin</artifactId>
+		    <version>${org.codehaus.mojo.version}</version>
+		    <executions>
+		       <execution>
+			    <id>script-chmod</id>
+			    <phase>install</phase>
+			    <goals>
+				<goal>exec</goal>
+			    </goals>
+			    <configuration>
+				<executable>chmod</executable>
+				<arguments>
+				    <argument>+x</argument>
+				    <argument>your-assembled-jar.jar</argument>
+				</arguments>
+			    </configuration>
+			</execution>
+		    </executions>
+		</plugin>
         </plugins>
     </build>
 
