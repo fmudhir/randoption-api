@@ -27,7 +27,7 @@ public class MyResource {
 
         //String[] SessionIdGenerator = SessionIdentifierGenerator.nextSessionId();
         //return "Got it!!!!" + SessionIdGenerator;
-        return "Got it!!!!"
+        return "Got it!!!!";
 
     }
 }
