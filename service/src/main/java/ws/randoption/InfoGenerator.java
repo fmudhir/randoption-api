@@ -31,12 +31,12 @@ public class InfoGenerator {
 
     @GET
     @Path("/pid")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getNewId() {
+    @Produces(MediaType.APPLICATION_JSON)
+    public InfoGeneratorJson getNewId() {
 
         String newId = nextSessionId();
         newId = randomUpper(newId, 0.5);
 
-        return newId;
+        return new InfoGeneratorJson(newId);
     }
 }
