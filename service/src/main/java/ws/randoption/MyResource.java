@@ -5,10 +5,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-
-//import java.security.SecureRandom;
-//import java.math.BigInteger;
-
 /**
  * Root resource (exposed at "myresource" path)
  */
@@ -25,16 +21,7 @@ public class MyResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
 
-        //String[] SessionIdGenerator = SessionIdentifierGenerator.nextSessionId();
-        //return "Got it!!!!" + SessionIdGenerator;
         return "Got it!!!!";
 
     }
 }
-
-//public static class SessionIdentifierGenerator {
-//    public static String nextSessionId() {
-//        SecureRandom random = new SecureRandom();
-//        return new BigInteger(130, random).toString(32);
-//    }
-//}
