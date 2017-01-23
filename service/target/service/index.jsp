@@ -1,12 +1,11 @@
 <html>
 <body>
-    <h1>Random Option RESTFUL API</h1>
-    <h2>Available paths</h2>
+    <h1>Random Option RESTFUL API (JSON)</h1>
+    <h2>Available features:</h2>
     <ul>
-        <li>/api/status</li>
-        <li>/api/gen/pid</li>
-        <li>/api/rand/{id}</li>
-        <li></li>
+        <li>/status</li>
+        <li>/gen/pid</li>
+        <li>/rand/{pid}</li>
     </ul>
 </body>
 </html>
