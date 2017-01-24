@@ -4,7 +4,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/robots.txt")
+@Path("robots.txt")
 public class Robots {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
